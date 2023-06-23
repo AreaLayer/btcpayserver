@@ -515,6 +515,8 @@ o.GetRequiredService<IEnumerable<IPaymentLinkExtension>>().ToDictionary(o => o.P
                     });
             }
 
+            services.AddSingleton<BtcPayAppService>();
+
             return services;
         }
 
